@@ -9,7 +9,6 @@ using namespace std;
 typedef struct No {
     char verbete;
     int indice = 0;
-    int fimdopadrao = 0;
     vector<No*> filhos;
 } No;
 
