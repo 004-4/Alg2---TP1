@@ -1,8 +1,6 @@
 #include <fstream>
 #include <iostream>
-#include <unordered_map>
 #include <string>
-#include <sstream>
 #include <vector>
 
 using namespace std;
@@ -15,7 +13,14 @@ typedef struct No {
     vector<No*> filhos;
 } No;
 
+//insere na árvore a tupla (indice do nó anterior, caractere) e marca o índice separado daquele filho
 void insere (No* dicio, char caractere, int indice);
+
+//busca na árvore se o caractere passado já está presente em algum padrão
 No* busca (No* raiz, char caractere);
+
+//passa o texto lido para um outro arquivo o codificando segundo os padrões inseridos na árvore
 void comprime (string e, string s);
+
+//o indice da tupla permite que os caracteres anteriores sejam encontrados e concatenados ao atual, reconstruindo o texto
 void descomprime (string e, string s);
