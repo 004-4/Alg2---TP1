@@ -13,7 +13,7 @@ typedef struct No {
     vector<No*> filhos;
 } No;
 
-//insere na árvore a tupla (indice do nó anterior, caractere) e marca o índice separado daquele filho
+//insere na árvore a tupla (indice do nó anterior, caractere)
 void insere (No* dicio, char caractere, int indice);
 
 //busca na árvore se o caractere passado já está presente em algum padrão
