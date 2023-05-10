@@ -57,7 +57,7 @@ void descomprime (string e, string s){
         else break;
     }
     texto.push_back(texto[numero]);
-    for (int i = 1; i < texto.size(int); i++){
+    for (int i = 1; i < (int)texto.size(); i++){
         texto[0] += texto[i];
     }
     saida << texto[0];
